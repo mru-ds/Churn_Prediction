@@ -3,5 +3,5 @@ numpy
 sklearn
 scipy
 streamlit
-Seaborn
+seaborn
 matplotlib
