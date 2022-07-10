@@ -62,20 +62,17 @@ def prediction(AGE, CUS_Month_Income, Gender, CUS_Marital_Status, YEARS_WITH_US,
 # this is the main function in which we define our webpage
 def main():
     # giving the webpage a title
-    st.title("Churn Customer Prediction")
+    st.title("Standard Bank-ML APP")
 
     # here we define some of the front end elements of the web page like
     # the font and background color, the padding and the text to be displayed
-    html_temp = """
-    <div style ="background-color:yellow;padding:13px">
-    <h1 style ="color:black;text-align:center;">Predicting Churn Customer with ML App </h1>
-    </div>
+    html_temp = """    
+    <h3 style ="color:white;">Churn Customer Prediction and Recommendations </h3>
     """
 
     # this line allows us to display the front end aspects we have
     # defined in the above code
     st.markdown(html_temp, unsafe_allow_html=True)
-
     # the following lines create text boxes in which the user can enter
     # the data required to make the prediction
 
@@ -88,7 +85,8 @@ def main():
     total_credit_amount = st.number_input("total credit amount", min_value=0.0)
     total_transactions = st.number_input("Total Transcations", min_value=0)
     TAR_Desc = st.selectbox("TAR Descrption", ('EXECUTIVE', 'LOW', 'MIDDLE', 'PLATINUM'))
-    CUS_Target = st.text_input("CUS Target", "Type Here")
+    CUS_Target = st.selectbox("CUS Target", ([2231, 2223, 2222, 2235, 2212, 2232, 2230, 2211, 2234, 2224, 2233,
+       2236]))
     result = ""
 
 
@@ -98,7 +96,7 @@ def main():
     if st.button("Predict"):
         result = prediction(AGE, CUS_Month_Income,Gender, CUS_Marital_Status, YEARS_WITH_US, total_debit_amount,
                             total_credit_amount, total_transactions, TAR_Desc, CUS_Target)
-        if result==1:
+        if result==0: #0 is active and 1 churn
             result='ACTIVE'
         else:
             result='Churn'
