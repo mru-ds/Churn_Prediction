@@ -1,8 +1,5 @@
 pandas
 numpy
-scipy
 streamlit
-seaborn
-matplotlib
 scikit-learn
-SMOTE
+
