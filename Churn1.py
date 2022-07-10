@@ -6,8 +6,7 @@ import streamlit as st
 
 
 # loading in the model to predict on the data
-pickle_in = open('rf.pkl', 'rb')
-classifier= pickle.load(pickle_in)
+classifier= pickle.load(open('rf.pkl', 'rb'))
 
 
 def welcome():
