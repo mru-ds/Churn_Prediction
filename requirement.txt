@@ -1,6 +1,5 @@
 pandas
 numpy
 streamlit
-scikit-learn==1.1.1
-pickel
+scikit-learn
 sklearn
