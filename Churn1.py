@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
+import sklearn
 from PIL import Image
 
 # loading in the model to predict on the data
