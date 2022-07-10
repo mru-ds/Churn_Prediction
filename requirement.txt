@@ -5,3 +5,4 @@ scipy
 streamlit
 seaborn
 matplotlib
+scikit-learn
