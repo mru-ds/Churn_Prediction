@@ -66,10 +66,7 @@ def main():
     # here we define some of the front end elements of the web page like
     # the font and background color, the padding and the text to be displayed
     html_temp = """    
-    <h3 style ="color:white;">
-    <a href='https://github.com/mrudula-ds21/Churn_Prediction'>Looking for Source Code?</a>
-    Churn Customer Prediction and Recommendations 
-    </h3>
+    <h3 style ="color:white;"> Churn Customer Prediction and Recommendations </h3>
     """
 
     # this line allows us to display the front end aspects we have
