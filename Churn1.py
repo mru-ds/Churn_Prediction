@@ -67,7 +67,7 @@ def main():
     # the font and background color, the padding and the text to be displayed
     html_temp = """    
     <h3 style ="color:white;">
-    <a href='https://github.com/Nikhil-Jagtap619/product_recommendation'>Looking for Source Code?</a>
+    <a href='https://github.com/mrudula-ds21/Churn_Prediction'>Looking for Source Code?</a>
     Churn Customer Prediction and Recommendations 
     </h3>
     """
