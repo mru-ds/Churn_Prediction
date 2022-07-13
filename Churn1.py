@@ -99,7 +99,7 @@ def main():
     # the prediction function defined above is called to make the prediction
     # and store it in the variable result
     if st.button("Predict"):
-        result = prediction(AGE, CUS_Month_Income,Gender, CUS_Marital_Status, YEARS_WITH_US, total_debit_amount,
+        result = prediction(AGE, CUS_Month_Income,CUS_Gender, CUS_Marital_Status, YEARS_WITH_US, total_debit_amount,
                             total_credit_amount, total_transactions, TAR_Desc, CUS_Target)
         if result==0: #0 is active and 1 churn
             result='ACTIVE'
